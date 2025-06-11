@@ -1,0 +1,37 @@
+buildscript {
+    repositories {
+        mavenCentral()
+        maven { url 'https://cdn.fox2code.com/maven' }
+    }
+    dependencies {
+        classpath('com.fox2code.FoxLoader:dev:2.0-alpha13')
+    }
+}
+
+apply plugin: 'foxloader.dev'
+
+dependencies {
+    api 'org.semver4j:semver4j:5.3.0'
+    testImplementation platform('org.junit:junit-bom:5.10.0')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+}
+
+test {
+    useJUnitPlatform()
+}
+
+jar {
+    from "LICENSE"
+}
+
+group = 'com.kivattt'
+version = "1.0.0"
+foxloader {
+    modId = "creativeonjoin"
+    modName = "CreativeOnJoin"
+    modVersion = project.version
+    modAuthors = "kivattt"
+    modWebsite = "https://github.com/kivattt/CreativeOnJoin"
+    modMain = "com.kivattt.creativeonjoin.CreativeOnJoin"
+    modDesc("Server mod that sets your gamemode to creative upon joining the server")
+}
