@@ -5,4 +5,4 @@
 ## Installation
 Make sure you're running a [FoxLoader](https://github.com/Fox2Code/FoxLoader/releases) server to be able to use this server mod!
 
-Download the [mod .jar file](https://github.com/kivattt/CreativeOnJoin) and put it inside the `mods` folder of your server, then restart your server
+Download the [mod .jar file](https://github.com/kivattt/CreativeOnJoin/releases) and put it inside the `mods` folder of your server, then restart your server
